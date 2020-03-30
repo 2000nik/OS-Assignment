@@ -32,7 +32,17 @@ void EnterDetails()
 	cout<<"Enter The Number of Ingredient needed by Each chef to make there dishes: ";
 	cin>>Ingredient_need;
 	cout<<endl;	
-	
+	check(chef,Ingredient_need);	
 }
 
+void check(int x,int y)
+{
+if(x<=0 || y<=0)
+    {
+    	cout<<"Invalid Entry";
+    	cout<<"Enter the valid Entry"; 
+    	cout<<endl;
+    	EnterDetails();	
+	}
+}
 
